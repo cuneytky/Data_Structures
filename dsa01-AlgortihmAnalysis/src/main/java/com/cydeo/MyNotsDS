@@ -1,0 +1,63 @@
+ ● What is a Data Structure / Algorithm
+ ● Big O notation
+
+ ****************************************************************
+
+ ==> How do we compare algorithms?
+Ideal solution : Expressing running time of an algorithm as a function of input size.
+f(n) where the input size is n.
+-This type of comparison is independent of machine time, programming style, etc
+---------------
+ *  asymptotic analysis is a method of describing limiting behavior
+
+ *  In any piece of code; you deal with two types of complexities:
+1. Time complexity: Number of steps taken by the algorithm, measured with respect to n (input data to be processed), the size of the input.
+2. Space complexity: The amount of space required by the algorithm to execute, measured with respect to n (input data to be processed)
+
+---------------
+ => What is Big O notation?
+● Big O notation, also called Landau's symbol, is a symbolism used in complexity theory, computer science, and mathematics to describe the asymptotic behavior of functions.
+● Basically, it tells you how fast a function grows or declines. In other words:Rate of Growth.
+● The ’Big-O’ is the language and metric we use to describe the efficiency of algorithms.
+● Big-O is a Big Picture approach;
+The ’Big-O’ notation allows us to ignore constant factors and lower-order terms and focus on the main components of a function that affect its growth.
+Rule 1: Always worst Case
+Rule 2: Remove Constants
+Rule 3 : If f (n) is a polynomial of degree d, that is,
+Rule 4 : Different inputs should have different variables: O(n + m) : ’+’ for steps in order
+         A and B arrays nested would be: O(n * m) : ‘*’ for nested steps
+
+---------------
+
+How Do I Calculate the Complexity of Code Blocks?
+
+* What Can Cause Time in a Code Piece? ==> Take a constant time “c”
+• Assigning a value to a variable
+• Following an object reference
+• Performing an arithmetic operation (+, -, *, / )
+• Comparing two numbers
+• Accessing a single element of an array by index
+• Calling a method
+• Returning from a method
+
+* What Causes Space Complexity?
+Variables
+Data Structures (additional)
+Method Call
+Allocations
+
+- Loops        ==>  Total time= constant c x n= cn = O(n)
+- Nested Loops ==>  Total time= c x n x n= c𝑛2 = O(𝑛2 )
+- Consecutive Statements ==>  Total time=𝑐0 + 𝑐1𝑛 + 𝑐2𝑛2 = O(𝑛2 )
+- If then Statements     ==>  Total = 𝑐0 + (𝑐1+ 𝑐2)𝑙𝑒𝑛𝑔𝑡ℎ = O(length)
+- Logarithmic complexity ==> Total time=O(log 𝑛)
+- what if I have different data sets? ==>  Total = O(n*m) (rule 4)
+
+============
+??? Interview Questions --> big O ?
+          Omega   Theta   Big O
+Best Case <---------------------> Worst Case
+
+*******************************************************************
+
+
