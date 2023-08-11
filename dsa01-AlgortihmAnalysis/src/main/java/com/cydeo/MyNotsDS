@@ -2,6 +2,17 @@
  ● Big O notation
 
  ****************************************************************
+What is a Data Structure ?
+● Data structure is a particular way of storing and organizing data in a computer so that it can be used efficiently.
+● General data structure types include arrays, files, linked lists, stacks, queues, trees, graphs and so on.
+● Depending on the organization of the elements, data structures are classified into two types:
+    1) Linear data structures: Elements are accessed in a sequential order but it
+        is not compulsory to store all elements sequentially (say, Linked Lists).
+        Examples: Linked Lists, Stacks and Queues.
+    2) Non – linear data structures: Elements of this data structure are
+        stored/accessed in a non-linear order. Examples: Trees and graphs
+
+--------------------
 
  ==> How do we compare algorithms?
 Ideal solution : Expressing running time of an algorithm as a function of input size.
@@ -59,5 +70,92 @@ Allocations
 Best Case <---------------------> Worst Case
 
 *******************************************************************
+Arrays
+    • An array is the basic mechanism for storing a collection of identically typed entities.
+    • Arrays use static memory allocation.
+    • Arrays can also be multi-dimensional
+● Advantages:
+    − Simple and easy to use
+    − Faster access to the elements (constant access)
+● Disadvantages:
+    −Preallocates all needed memory up front and wastes memory space for indices in the array that are empty.
+    −Fixed size: The size of the array is static (specify the array size before using it).
+    −One block allocation: To allocate the array itself at the beginning, sometimes it may not be possible to
+        get the memory for the complete array (if the array size is big).
+    −Complex position-based insertion: To insert an element at a given position, we may need to shift the
+        existing elements
+
+Dynamic Arrays
+● Dynamic arrays are resizable, growable arrays.
+● How can we create dynamic arrays?
+● There two implementations of Dynamic Arrays in Java:
+    - Vector class : Size is increased by %100 if full. Synchronized (Only a single thread can access in multi-threaded environment )
+    - ArrayList class: Size is increased by % 50 if fuIl. If you need multithreads access to data you should prefer ArrayList class
+
+Implementation of Dynamic Arrays in Java
+● Vector and ArrayList are under java.util package
+● They can hold objects so, for primitive types use wrapper class.
+
+ArrayList and Vector Performance
+● add()     – O(1)
+● add(index, element) – O(n)
+● get()     – O(1)
+● remove()  – O(n)
+● indexOf() – O(n)
+● contains() – implementation is based on indexOf(). So it will also run in O(n) time.
 
 
+
+
+Arrays - Key Takeaways
+● Simplest Data Structure
+● Static (Arrays) vs dynamic (ArrayList & Vector)
+● Arrays are great if you know how many items you’ll store.
+Runtime Complexities:
+    Lookup by Index O(1)
+    Lookup by Value O(n)
+    Insert O(n)
+    Delete O(n)
+
+    *******************************************************************
+QUESTİONS-ANSWERS:
+1-ilk for n, ikinci for n, n+n=2n, 2 sabıt alınmaz sonuc --> O(n)
+2- nested loop, nxn = O(n2)
+3- operation sabıt alınmaz, bxc = b sonuç --> O(b)
+4- 100000xbxa-> constant değer alınmaz(data lar sabıt alınmaz) sonuc --> O(axb)
+
+*******************************************************************
+
+Big O Cheat Sheet
+Big Os :
+O(1) Constant        – no loops
+O(log N) Logarithmic – usually searching algorithms have log n if they are sorted (Binary Search)
+O(n) Linear           – for loops, while loops through n items
+O(n log(n)) Log Linear – usually sorting operations
+O(n^2) Quadratic        – every element in a collection needs to be compared to ever other element. Two nested loops
+O(2^n) Exponential    – recursive algorithms that solves a problem of size N
+O(n!) Factorial      – you are adding a loop for every element
+Iterating through half a collection is still O(n)
+Two separate collections: O(a * b)
+-----
+What Can Cause Time in a Code?
+Operations (+, -, *, /)
+Comparisons (<, >, ==)
+Looping (for, while)
+Outside Function call (function())
+-----
+What Causes Space Complexity?
+Variables
+Data Structures
+Function Call
+Allocations
+-----
+Rule Book
+Rule 1: Always worst Case
+Rule 2: Remove Constants (c1+c2+ 2n2)
+Rule 3: Different inputs should have different variables: O(a + b)
+        A and B arrays nested would be: O(a * b)
+        + for steps in order
+        * for nested steps
+Rule 4: Drop Non-dominant terms
+*******************************************************************
