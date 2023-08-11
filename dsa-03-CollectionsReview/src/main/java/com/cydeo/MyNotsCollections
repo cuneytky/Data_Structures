@@ -1,0 +1,8 @@
+
+- int.Ques???
+- why do I need to implement the hashCode ?
+- what happen ıf I don't implement the hashCode ?
+- what is hashCode ?
+
+-  HashSet doesn't maintain the insertion order.
+- LinkedHashSet-HashSet arasındaki fark? (linkedHashSet sıraysını korur diğeri korumaz)
