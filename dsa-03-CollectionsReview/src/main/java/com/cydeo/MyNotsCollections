@@ -5,4 +5,5 @@
 - what is hashCode ?
 
 -  HashSet doesn't maintain the insertion order.
-- LinkedHashSet-HashSet arasındaki fark? (linkedHashSet sıraysını korur diğeri korumaz)
+- LinkedHashSet-HashSet arasındaki fark?
+ (linkedHashSet sıraysını korur diğeri korumaz)

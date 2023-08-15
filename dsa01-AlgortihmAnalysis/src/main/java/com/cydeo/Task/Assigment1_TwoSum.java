@@ -1,15 +1,11 @@
 package com.cydeo.Task;
-
 import java.util.Arrays;
-
 public class Assigment1_TwoSum {
     public static void main(String[] args) {
 
         int[] array = new int[]{4,7,2,11};
         System.out.println(Arrays.toString(twoSumSolution1(array,9)));
-
     }
-
     // BruteForce Solution of Two Sum problem
     public static int[] twoSumSolution1(int[] array, int targetValue){
         for (int i = 0; i<array.length ; i++) {
