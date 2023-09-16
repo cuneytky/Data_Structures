@@ -115,7 +115,7 @@ Assignment -2: addFirst(int value) Method
         // case 1: list empty
         if(isEmpty()){
             head=tail=node;
-        } else{// case 2 : list is not empty
+        } else{      // case 2 : list is not empty
             node.next=head;
             head=node;
         }
@@ -147,28 +147,7 @@ Assignment -3: Get Kth Item From the Last
         return ptr1.id;
     }
 
-    public void removeKthFromLast2(int k){
-        Node ptr1=head;
-        Node ptr2=head;
-        for(int i=0;i<k-1;i++) {
-            ptr2=ptr2.next;
-            if (ptr2==null)  System.out.println("Less than k elements");
-            else if(ptr2.next==null){
-                head=ptr1.next;
-                ptr1.next=null;
-                return;
-            }
-        }
-        while(ptr2.next.next!=null) {
-            ptr1=ptr1.next;
-            ptr2=ptr2.next;
-        }
-        ptr1.next=ptr1.next.next;
-        ptr1=ptr1.next;
-        ptr1=null;
-    }
-
-    /*
+      /*
  Assignment -4: Remove Kth Item From the Last (Optional )
 1. You don’t know the size of the singly linked list.
 2. Delete the Kth item from last in one pass
@@ -204,6 +183,27 @@ Assignment -3: Get Kth Item From the Last
             ptr1.next=null;
             size--;
         }
+    }
+
+    public void removeKthFromLast2(int k){
+        Node ptr1=head;
+        Node ptr2=head;
+        for(int i=0;i<k-1;i++) {
+            ptr2=ptr2.next;
+            if (ptr2==null)  System.out.println("Less than k elements");
+            else if(ptr2.next==null){
+                head=ptr1.next;
+                ptr1.next=null;
+                return;
+            }
+        }
+        while(ptr2.next.next!=null) {
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
+        }
+        ptr1.next=ptr1.next.next;
+        ptr1=ptr1.next;
+        ptr1=null;
     }
 
 
