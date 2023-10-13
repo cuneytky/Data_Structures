@@ -8,11 +8,11 @@ public class ReverseFirstKElementsQueueProblem {
         for (int i = 1; i < 6; i++) {
             queue.enqueue(i);
         }
-        System.out.println("Initial queue: ");
-        queue.printQueue();
+        System.out.println("Initial queue: ");   // Initial queue:
+        queue.printQueue();                      // 1, 2, 3, 4, 5
         System.out.println();
-        System.out.println("After reverse");
-        reverseFirstK(queue,3).printQueue();
+        System.out.println("After reverse");     // After reverse
+        reverseFirstK(queue,3).printQueue();  // 3, 2, 1, 4, 5
     }
     static MyQueue<Integer> reverseFirstK(MyQueue<Integer> queue, int k){
         //create a stack
@@ -32,3 +32,13 @@ public class ReverseFirstKElementsQueueProblem {
         return queue;
     }
 }
+/*
+Queues -Assignment:
+1. Given an integer K and a queue of integers, write code to reverse the order
+of the first K elements of the queue.
+-Input: Q = [10, 20, 30, 40, 50], K = 4
+-Output: Q = [40,30, 20, 10,50]
+Hint: You can use stack to reverse the order of first K elements
+
+
+ */
