@@ -18,5 +18,4 @@ public class StackWithList<E> {
         if (list.isEmpty()) return null;
         else return list.remove(0);
     }
-
 }

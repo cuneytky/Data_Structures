@@ -15,6 +15,10 @@
         <module>dsa-04-LinkedLists</module>
         <module>dsa-06-AlgorithmProblems</module>
         <module>dsa-07-Queues</module>
+        <module>dsa-08-Trees</module>
+        <module>dsa-09-Heap</module>
+        <module>dsa-10-Search</module>
+        <module>dsa-11-sorting</module>
     </modules>
 
     <properties>

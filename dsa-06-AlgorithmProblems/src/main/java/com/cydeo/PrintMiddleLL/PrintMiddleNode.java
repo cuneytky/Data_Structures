@@ -1,7 +1,5 @@
 package com.cydeo.PrintMiddleLL;
 
-
-
 public class PrintMiddleNode {
     public static void main(String[] args) {
         MySinglyLinkedList sll=new MySinglyLinkedList();

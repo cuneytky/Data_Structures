@@ -25,7 +25,7 @@ public class ReverseFirstKElementsQueueProblem {
         while(!stack.isEmpty()){
             queue.enqueue(stack.pop());
         }
-        // dequeue and enqueue size of queue -k times
+        // dequeue and enqueue size of queue -k times08u6
         for (int i = 0; i < queue.size-k ; i++) {
             queue.enqueue(queue.dequeue());
         }
@@ -39,6 +39,4 @@ of the first K elements of the queue.
 -Input: Q = [10, 20, 30, 40, 50], K = 4
 -Output: Q = [40,30, 20, 10,50]
 Hint: You can use stack to reverse the order of first K elements
-
-
  */
