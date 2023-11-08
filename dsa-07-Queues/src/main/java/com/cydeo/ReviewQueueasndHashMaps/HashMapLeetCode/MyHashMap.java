@@ -33,6 +33,13 @@ public class MyHashMap {
         int index = key%modNumber;
         list.get(index).remove(key);
     }
-
-
 }
+/*
+Practice- LeetCode #706 Design HashMap - Template
+
+* Your MyHashMap object will be instantiated and called as such:
+* MyHashMap obj = new MyHashMap();
+* obj.put(key,value);
+* int param_2 = obj.get(key);
+* obj.remove(key);
+*/
